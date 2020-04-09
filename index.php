@@ -25,6 +25,12 @@
 <body>
 
 
+blablabla
+blaBlaBla
+
+border-top
+borderTop
+
 <script type="text/javascript">
 $(function(){
     var lastScrollTop = 0;
@@ -33,12 +39,12 @@ $(function(){
         // console.log(st);
         if((st <= 40)||(st < lastScrollTop)){
             // console.log("<40 or up");
-            // $("body").removeClass("sticky-header");
-            $("header").css("marginTop", 0 );
+            $("body").removeClass("sticky-header");
+            // $("header").css("marginTop", 0 );
         }else{
             // console.log(">40 or down");
-            $("header").css( "marginTop", ($("#header-top").height()*-1) );
-            // $("body").addClass("sticky-header");
+            // $("header").css( "marginTop", ($("#header-top").height()*-1) );
+            $("body").addClass("sticky-header");
         }
         if(st >= 250){
             $("header").addClass("nav-opaque");
